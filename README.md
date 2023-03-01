@@ -1,8 +1,8 @@
 # QT1
-This repository contains sources of the Open Quantum Random Number Generator QT1.
+This repository contains sources of the OpenQRNG QT1.
 
 ## Description
-OpenQRNG QT1 is a 1Mbps open source quantum random number generator compliant with NIST-SP800-22 test suite certification.
+OpenQRNG QT1 is a 1Mbps open source quantum random number generator compliant with NIST-SP800-22 test suite.
 This repository contains:
 * Electronic schematic
 * Embedded software sources
