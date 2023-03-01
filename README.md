@@ -1,5 +1,5 @@
 # QT1
-This repository contains all files of the Open Quantum Random Number Generator QT1.
+This repository contains sources of the Open Quantum Random Number Generator QT1.
 
 ## License
 
