@@ -1,0 +1,81 @@
+
+(rules PCB QT1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 188)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd-smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad1)" GND1 "Net-(U2-+)" "Net-(D1-K)" "Net-(D1-A)" "Net-(U1-+)" "Net-(R5-Pad1)" "Net-(U3--)"
+    "unconnected-(U1-NULL-Pad1)" "unconnected-(U1-NULL-Pad5)" "unconnected-(U1-NC-Pad8)" +3.3V +5V "unconnected-(U2-Q-Pad7)" "Net-(U2-~{Q})" "unconnected-(U4-Pad0)"
+    "unconnected-(U4-Pad1)" "unconnected-(U4-Pad2)" "unconnected-(U4-Pad3)" "unconnected-(U4-Pad3.3V_1)" "unconnected-(U4-Pad4)" "unconnected-(U4-Pad5)" "unconnected-(U4-Pad7)" "unconnected-(U4-Pad10)"
+    "unconnected-(U4-Pad11)" "unconnected-(U4-Pad12)" "unconnected-(U4-Pad13)" "unconnected-(U4-Pad14)" "unconnected-(U4-Pad15)" "unconnected-(U4-Pad16)" "unconnected-(U4-Pad17)" "unconnected-(U4-Pad18)"
+    "unconnected-(U4-Pad19)" "unconnected-(U4-Pad20)" "unconnected-(U4-Pad21)" "unconnected-(U4-Pad22)" "unconnected-(U4-Pad23)" GND3 "unconnected-(U4-ON{slash}OFF-PadON-OFF)" "unconnected-(U4-PROGRAM-PadPGM)"
+    "unconnected-(U4-PadVBAT)" "unconnected-(U4-PadG2)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
