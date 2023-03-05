@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 188)
+    (start_pass_no 623)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -29,7 +29,6 @@
     (width 250.0)
     (clear 200.0)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 50.0 (type smd-smd))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -68,7 +67,7 @@
     "unconnected-(U4-Pad1)" "unconnected-(U4-Pad2)" "unconnected-(U4-Pad3)" "unconnected-(U4-Pad3.3V_1)" "unconnected-(U4-Pad4)" "unconnected-(U4-Pad5)" "unconnected-(U4-Pad7)" "unconnected-(U4-Pad10)"
     "unconnected-(U4-Pad11)" "unconnected-(U4-Pad12)" "unconnected-(U4-Pad13)" "unconnected-(U4-Pad14)" "unconnected-(U4-Pad15)" "unconnected-(U4-Pad16)" "unconnected-(U4-Pad17)" "unconnected-(U4-Pad18)"
     "unconnected-(U4-Pad19)" "unconnected-(U4-Pad20)" "unconnected-(U4-Pad21)" "unconnected-(U4-Pad22)" "unconnected-(U4-Pad23)" GND3 "unconnected-(U4-ON{slash}OFF-PadON-OFF)" "unconnected-(U4-PROGRAM-PadPGM)"
-    "unconnected-(U4-PadVBAT)" "unconnected-(U4-PadG2)"
+    "unconnected-(U4-PadVBAT)" "unconnected-(U4-PadG2)" "unconnected-(U3-NC-Pad1)" "unconnected-(U3-NC-Pad5)" "unconnected-(U3-NC-Pad8)" "Net-(C2-Pad2)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
